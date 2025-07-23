@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* colors */
+.dark-1{
+    color: #000000;
+}
+.orange{
+    color: #E95A08;
+}
+.all-p{
+    color: rgba(0, 0, 0, 0.5);
+}
+.shop-col{
+    color: #8987A1;
+}
+.home{
+    color: #252432;
+}
+
+/* nav section */
+.nav-container{
+    margin: 0px auto;
+    max-width: 1140px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-container ul{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.nav-container a{
+    text-decoration: none;
+}
+.cart{
+    width: 24px;
+    height: 24px;
+}
+
+@media  screen and (max-width:576px){
+    .home , .shop-col{
+        display: none;
+    }
+}
+
+/* banner section */
+.banner-container{
+    max-width: 1140px;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-content{
+    max-width: 50%;
+}
+
+.banner-content h3{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.banner-container img{
+    max-width: 100%;
+}
+
+@media screen and (max-width:576px){
+    .banner-container{
+        flex-direction:column-reverse;
+    }
+    .banner-content{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .banner-content h3{
+        font-size: 1.5rem;
+    }
+    .banner-content p{
+        font-size: 0.87rem;
+    }
+}
