@@ -343,7 +343,7 @@ button {
 .subscribe-section {
     margin: 100px auto;
     height: 530px;
-    background: url('/assets/news-letter-bg.png') no-repeat center center;;
+    background: url('/assets/news-letter-bg.png') no-repeat center center;
     display: flex;
     justify-content: center;
     align-items: center;
