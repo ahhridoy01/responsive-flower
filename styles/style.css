@@ -340,63 +340,74 @@ button {
 }
 
 /* subscription section */
-.subscribe-section {
-    margin: 100px auto;
+
+.subscribe-container {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
     height: 530px;
-    background: url('/assets/news-letter-bg.png') no-repeat center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    padding: 40px;
+    border-radius: 10px;
 }
 
-.sub-content h2 {
+.content h3 {
     color: white;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-size: 3.1rem;
 }
 
-.subscribe-form {
+.subscribe-box {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    background: white;
+    max-width: 800px;
+    margin: auto;
 }
 
-.subscribe-form input {
-    width: 500px;
-    display: flex;
-    padding: 14px;
+.subscribe-box input {
+    width: 800px;
+    flex: 1;
+    padding: 15px;
+    font-size: .90rem;
+    font-weight: 600px;
     border: none;
-    font-size: 16px;
+    outline: none;
 }
 
-.subscribe-form button {
-    background: #ff5a1f;
-    color: white;
-    border: none;
+.subscribe-box button {
     padding: 0 25px;
-    font-size: 16px;
+    border: none;
+    background: #ff6600;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
 
 }
 
 @media screen and (max-width:576px) {
-    .subscribe-section {
-        background: url('/assets/news-letter-bg.png');
-        width: 100%;
-        border-radius: 15px;
+    .subscribe-box input {
+        width: 150px;
     }
 
-    .subscribe-form input {
-        width: 160px;
-        display: flex;
-        padding: 14px;
-        border: none;
-        font-size: 16px;
-    }
-
-    .sub-content h2 {
+    .content h3 {
         font-size: 1.2rem;
     }
+
+    .bg-img {
+        border-radius: 14px;
+    }
+}
