@@ -76,6 +76,10 @@ button:hover {
     .shop-col {
         display: none;
     }
+
+    .nav-container img {
+        max-width: 70px;
+    }
 }
 
 /* banner section */
