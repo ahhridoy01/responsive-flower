@@ -420,3 +420,49 @@ button:hover {
         border-radius: 14px;
     }
 }
+
+/* footer section */
+.footer-container {
+    max-width: 1120px;
+    margin: 50px auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container li {
+    margin-bottom: 10px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-container p {
+    font-weight: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:576px) {
+    .footer-container {
+        margin: 100px auto;
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .footer-container {
+        text-align: left;
+    }
+
+    .left {
+        margin-left: 10px;
+    }
+
+    .icon {
+        margin-left: 30px;
+    }
+}
